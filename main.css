@@ -1,0 +1,610 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'IBM Plex Serif', serif;
+	font-size: 16px;
+}
+
+html, body
+{
+	background-color: white;
+    height: 100%;
+    width: 3200px;
+}
+
+div#wrapper
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+div#fond
+{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+/********************************************************************** titre, texte et liste */
+
+h1, h2
+{
+    font-family: 'DM Serif Display', serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #7a7d68;
+}
+
+h1
+{
+    font-size: 30px;
+}
+
+h3
+{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    color: #7a7d68;
+    margin-bottom: 10px;
+}
+
+div ul li, div ul li span, div p
+{
+    font-family: 'Dosis', sans-serif;
+    color: #7a7d68;
+}
+
+div ul
+{
+    margin-bottom: 10px;
+}
+
+div ul li
+{
+    list-style-type: circle;
+    margin-left: 30px;
+}
+
+div p
+{
+    text-align: justify;
+    font-size: 16px;
+}
+
+/******************************************************************************div portrait */
+div#portrait
+{
+    background-color: #f0d2ab;
+    position: fixed;
+    width: 220px;
+    height: 640px;
+    z-index: 11;
+    left: 20px;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+div#portrait h1
+{
+    margin: 0 auto 10px auto;
+}
+
+div#portrait img
+{
+    width: 180px;
+    margin: 0 auto 50px auto;
+    border-radius: 50%;
+}
+
+div#portrait div#contact
+{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+div#portrait div#contact div#icones
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+div#portrait div#contact img
+{
+    width: 30px;
+    margin: 0 10px;
+}
+
+/******************************************************************************div cadre */
+
+div.cadre
+{
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 0 10px #dee2e6;
+}
+
+/*****************************************************************************div Epitech */
+
+div#epitech
+{
+    background-color: #f4f4f4;
+    padding: 10px 10px 0 10px;
+    top: 15px;
+    left: 305px;
+}
+
+/*****************************************************************************div carte */
+
+div#carte
+{
+    top: 190px;
+    left: 570px;
+    z-index: 8;
+    height: 280px;
+    width: 280px;
+}
+
+div#carte img
+{
+    position: absolute;
+    top: 74px;
+    left: 65px;
+    display: none;
+    width: 150px;
+}
+
+div#carte:hover img
+{
+    display: block;
+    z-index: 9;
+}
+
+/*****************************************************************************div stage */
+
+div#stage
+{
+    background-color: #d6d9d0;
+    bottom: 70px;
+    left: 370px;
+    width: 350px;
+    padding: 10px;
+}
+
+/****************************************************************************div calque */
+
+div.calque
+{
+    background-color: rgba(122, 125, 104, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#tictactoe div.calque
+{
+    background-color: rgba(183, 189, 176, 0.8);
+}
+
+div#bourgogne div.calque
+{
+    background-color: rgba(214, 217, 208, 0.8);
+}
+
+div#linkedin div.calque
+{
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+div#carthageo div.calque
+{
+    background-color: rgba(244, 244, 244, 0.8);
+}
+
+div.calque:hover
+{
+    opacity: 0;
+}
+
+div#carthageo div.calque:hover
+{
+    opacity: 1;
+}
+
+div.calque h2
+{
+    color: white;
+}
+
+/**************************************************************************div appli météo */
+
+div#applimeteo
+{
+    top: 55px;
+    left: 890px;
+    height: 370px;
+}
+
+div#applimeteo img
+{
+    height: 100%;
+}
+
+/**************************************************************************div tictactoe */
+
+div#tictactoe
+{
+    bottom: 80px;
+    left: 820px;
+    height: 140px;
+}
+
+div#tictactoe img
+{
+    height: 100%;
+}
+
+/*************************************************************************div Bourgogne */
+
+div#bourgogne
+{
+    bottom: 50px;
+    left: 1120px;
+    height: 250px;
+    z-index: 8;
+}
+
+div#bourgogne h2
+{
+    color: #7a7d68;
+}
+
+div#bourgogne img
+{
+    height: 100%;
+}
+
+/************************************************************************* div carthageo */
+
+div#carthageo
+{
+    top: 100px;
+    left: 1200px;
+    width: 300px;
+    height: 195px;
+}
+
+div#carthageo div.calque
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#carthageo h2
+{
+    color: #7a7d68;
+    margin: 0 30px;
+}
+
+div#carthageo img
+{
+    width: 300px;
+}
+
+div#carthageo div.calque img
+{
+    height: 25px;
+    width: 20px;
+}
+
+/************************************************************************div babbel */
+
+div#babbel
+{
+    bottom: 85px;
+    left: 1365px;
+    height: 80px;
+    width: 120px;
+    background-color: #f4f4f4;
+    padding: 10px 10px 0 10px;
+}
+
+div#babbel p
+{
+    font-size: 22px;
+}
+
+/********************div progression */
+
+div#progression
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/************************************************************************ div github */
+
+div#gitHub
+{
+    bottom: 235px;
+    left: 1395px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #7a7d68;
+}
+
+div#gitHub img
+{
+    height: 80px;
+    margin: 10px;
+}
+
+div#gitHub:hover
+{
+    background-color: #24292f;
+}
+
+/************************************************************************* div openclassrooms */
+
+div#openclassrooms
+{
+    background-color: #b7bdb0;
+    padding: 10px 10px 0 10px;
+    top: 23px;
+    left: 1575px;
+    width: 325px;
+}
+
+div#openclassrooms div.certificat
+{
+    position: relative;
+    padding: 0 0 10px 20px;
+    border-left: #7a7d68 2px solid;
+}
+
+div#openclassrooms div.certificat.futur
+{
+    border-left: #b7bdb0 2px solid;
+}
+
+div#openclassrooms div.certificat span
+{
+    position: absolute;
+    left: -6px;
+    top: 5px;
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #7a7d68;
+}
+
+div#openclassrooms h2, div#openclassrooms h3
+{
+    color: #f4f4f4;
+}
+
+div#openclassrooms h3
+{
+    margin-bottom: 5px;
+}
+
+div#openclassrooms p
+{
+   font-size: 14px; 
+}
+
+/*************************************************************** div direction div enseignement  div etudes*/
+
+div#direction
+{
+    background-color: #f4f4f4;
+    padding: 10px 10px 0 10px;
+    bottom: 50px;
+    left: 1955px;
+    z-index: 8;
+}
+
+div#enseignement
+{
+    background-color: #d6d9d0;
+    padding: 10px 10px 0 10px;
+    top: 25px;
+    left: 2355px;
+    z-index: 9;
+}
+
+div#etudes
+{
+    background-color: #b7bdb0;
+    padding: 10px 10px 0 10px;
+    height: 250px;
+    top: 50px;
+    left: 2765px;
+    z-index: 8;
+}
+
+div#direction h3, div#enseignement h3, div#etudes h3
+{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+
+div#direction p, div#enseignement p, div#etudes p
+{
+    padding-left: 15px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+div#etudes p
+{
+    padding-left: 0;
+    visibility: hidden;
+}
+
+div#etudes:hover p
+{
+    padding-left: 0;
+    visibility: visible;
+}
+
+
+div#direction p#date, div#enseignement p#date
+{
+    font-style: italic;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+div#etudes h2, div#etudes h3, div#etudes p
+{
+    color: #f4f4f4;
+}
+
+div#direction hr
+{
+    color: #7a7d68;
+    margin-bottom: 15px;
+}
+
+div#enseignement hr
+{
+    color: #f4f4f4;
+    margin-bottom: 15px;
+}
+
+div#etudes h2, div#etudes h3, div#etudes p
+{
+    text-align: right;
+} 
+
+div#etudes h2
+{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+/************************************************************************ div linkedin */
+
+div#linkedin
+{
+    top: 80px;
+    left: 1995px;
+    width: 120px;
+    height: 120px;
+    z-index: 8;
+    border-radius: 5px;
+}
+
+/*********************************************************************** div ministere */
+
+div#ministere
+{
+    top: 150px;
+    left: 2175px;
+    z-index: 9;
+    background-color: white;
+}
+
+div#ministere img
+{
+    width: 160px;
+    padding: 0 20px;
+}
+
+/************************************************************************* div senlis */
+
+div#senlis
+{
+    width: 750px;
+    height: 300px;
+    bottom: 45px;
+    left: 2370px;
+}
+
+div#senlis div#filtre
+{
+    background-color: rgba(122, 125, 104, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 7;
+    padding: 10px 10px 0 10px;
+}
+
+div#senlis div#filtre h2, div#senlis div#filtre p
+{
+    visibility: hidden;
+    color: #f4f4f4;
+}
+
+div#senlis div#filtre:hover
+{
+    background-color: rgba(122, 125, 104, 0.9);
+}
+
+div#senlis div#filtre:hover h2, div#senlis div#filtre:hover p
+{
+    visibility: visible;
+}
+
+blockquote
+{
+    margin: 15px 0;
+}
+
+blockquote p.citation
+{
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+/************************************************************************* div retour */
+
+div#retour
+{
+    background-color: #f4f4f4;
+    padding: 10px;
+    width: 30px;
+    height: 280px;
+    top: 35px;
+    left: 3070px;
+    display: flex;
+    align-items: center;
+}
+
+div#retour a
+{
+    display: flex;
+    align-items: center;
+}
+
+div#retour a img
+{
+    width: 100%;
+}
