@@ -161,13 +161,14 @@ div#carte img
     position: absolute;
     top: 74px;
     left: 65px;
-    display: none;
+    opacity: 0;
     width: 150px;
+    transition: opacity 0.5s linear;
 }
 
 div#carte:hover img
 {
-    display: block;
+    opacity: 1;
     z-index: 9;
 }
 
@@ -195,6 +196,10 @@ div.calque
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
 }
 
 div#tictactoe div.calque
@@ -351,6 +356,7 @@ div#gitHub
     width: 100px;
     border-radius: 50%;
     background-color: #7a7d68;
+    transition: background-color 0.5s linear;
 }
 
 div#gitHub img
@@ -555,12 +561,7 @@ div#senlis div#filtre
     left: 0;
     z-index: 7;
     padding: 10px 10px 0 10px;
-}
-
-div#senlis div#filtre h2, div#senlis div#filtre p
-{
-    visibility: hidden;
-    color: #f4f4f4;
+    transition: background-color 0.5s linear;
 }
 
 div#senlis div#filtre:hover
@@ -568,9 +569,21 @@ div#senlis div#filtre:hover
     background-color: rgba(122, 125, 104, 0.9);
 }
 
-div#senlis div#filtre:hover h2, div#senlis div#filtre:hover p
+div#senlis div#filtre h2
 {
-    visibility: visible;
+    color: #f4f4f4;
+}
+
+div#senlis div#filtre p
+{
+    opacity: 0;
+    color: #f4f4f4;
+    transition: opacity 0.5s linear;
+}
+
+div#senlis div#filtre:hover p
+{
+    opacity: 1;
 }
 
 blockquote
