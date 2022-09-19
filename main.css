@@ -462,13 +462,15 @@ div#direction p, div#enseignement p, div#etudes p
 div#etudes p
 {
     padding-left: 0;
-    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s linear;
 }
 
 div#etudes:hover p
 {
     padding-left: 0;
-    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
 }
 
 
@@ -604,6 +606,7 @@ div#retour
     left: 3070px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 div#retour a
