@@ -388,11 +388,6 @@ div#openclassrooms div.certificat
     border-left: #7a7d68 2px solid;
 }
 
-div#openclassrooms div.certificat.futur
-{
-    border-left: #b7bdb0 2px solid;
-}
-
 div#openclassrooms div.certificat span
 {
     position: absolute;
