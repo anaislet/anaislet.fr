@@ -123,3 +123,15 @@ var carte3 = new ol.Map({
 });
 
 document.getElementById("retour").addEventListener("click", function() {window.scrollTo(0, 0);});
+
+document.getElementById("christmas").addEventListener("mouseover", function() {
+    document.getElementById("christmas_calque").style.display = "none"
+    document.getElementById("christmas_video").setAttribute("controls", "controls")
+});
+
+document.getElementById("christmas").addEventListener("mouseout", function() {
+    document.getElementById("christmas_calque").style.display = "flex"
+    document.getElementById("christmas_video").removeAttribute("controls")
+    document.getElementById("christmas_video").pause()
+    document.getElementById("christmas_video").currentTime = 0
+});

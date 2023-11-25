@@ -10,7 +10,7 @@ html, body
 {
 	background-color: white;
     height: 100%;
-    width: 4040px;
+    width: 4440px;
 }
 
 div#wrapper
@@ -161,6 +161,11 @@ div.texte_calque
     align-items: center;
 }
 
+div#christmas div.calque
+{
+    background-color: rgba(183, 189, 176, 0.8);
+}
+
 div#icecreams div.calque
 {
     background-color: rgba(183, 189, 176, 0.8);
@@ -202,12 +207,56 @@ div.calque h2, div.calque p
     color: white;
 }
 
+/**************************************************************************div rubber */
+
+div#rubber
+{
+    bottom:0px;
+    left: 340px;
+    height: 100%;
+    width: 310px;
+    background-color: #f4f4f4;
+    padding: 10px 10px 0 10px;
+}
+
+.rubber_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 52%;
+}
+
+.rubber_content p {
+    margin-right: 20px;
+}
+
+.rubber_content p span{
+    font-weight: 600;
+}
+
+/**************************************************************************div christmas */
+
+div#christmas
+{
+    bottom:65px;
+    left: 300px;
+    height: 253px;
+    width: 420px;
+    background-color: rgba(122, 125, 104, 0.9);
+    padding: 10px 10px 0 10px;
+    padding: 0;
+}
+
+video {
+    width: 100%;
+}
+
 /**************************************************************************div formation2 */
 
 div#formation2
 {
     bottom:20px;
-    left: 300px;
+    left: 740px;
     height: 300px;
     width: 300px;
     background-color: rgba(122, 125, 104, 0.9);
@@ -254,7 +303,7 @@ div#formation2 p
 div#icecreams
 {
     top: 55px;
-    left: 325px;
+    left: 655px;
     height: 290px;
     width: 360px;
 }
@@ -270,7 +319,7 @@ div#opera
 {
     background-color: #b7bdb0;
     top: 90px;
-    left: 700px;
+    left: 1100px;
     width: 360px;
     height: 400px;
     padding: 10px;
@@ -291,7 +340,7 @@ div.contexte_c2c
 div#c2c
 {
     bottom: 10px;
-    left: 740px;
+    left: 1140px;
     z-index: 10;
     height: 200px;
     width: 200px;
@@ -320,7 +369,7 @@ div#epitech
     background-color: #f4f4f4;
     padding: 10px 10px 0 10px;
     top: 15px;
-    left: 1105px;
+    left: 1505px;
 }
 
 div#titre_epitech
@@ -349,7 +398,7 @@ div#tronc_commun p, div#specialisation p
 div#carte
 {
     top: 190px;
-    left: 1410px;
+    left: 1810px;
     z-index: 10;
     height: 280px;
     width: 280px;
@@ -376,7 +425,7 @@ div#carte:hover img
 div#applimeteo
 {
     top: 55px;
-    left: 1730px;
+    left: 2130px;
     height: 370px;
 }
 
@@ -389,9 +438,9 @@ div#applimeteo img
 
 div#tictactoe
 {
-    bottom: 80px;
-    left: 1660px;
-    height: 140px;
+    bottom: 40px;
+    left: 1870px;
+    height: 180px;
 }
 
 div#tictactoe img
@@ -404,7 +453,7 @@ div#tictactoe img
 div#bourgogne
 {
     bottom: 50px;
-    left: 1960px;
+    left: 2360px;
     height: 250px;
     z-index: 8;
 }
@@ -424,7 +473,7 @@ div#bourgogne img
 div#carthageo
 {
     top: 100px;
-    left: 2040px;
+    left: 2440px;
     width: 300px;
     height: 195px;
 }
@@ -458,7 +507,7 @@ div#carthageo div.calque img
 div#babbel
 {
     bottom: 85px;
-    left: 2205px;
+    left: 2605px;
     height: 80px;
     width: 120px;
     background-color: #f4f4f4;
@@ -484,7 +533,7 @@ div#progression
 div#gitHub
 {
     bottom: 235px;
-    left: 2235px;
+    left: 2635px;
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -510,7 +559,7 @@ div#openclassrooms
     background-color: #b7bdb0;
     padding: 10px 10px 0 10px;
     top: 23px;
-    left: 2415px;
+    left: 2815px;
     width: 325px;
 }
 
@@ -555,7 +604,7 @@ div#direction
     background-color: #f4f4f4;
     padding: 10px 10px 0 10px;
     bottom: 50px;
-    left: 2795px;
+    left: 3195px;
     z-index: 8;
 }
 
@@ -564,7 +613,7 @@ div#enseignement
     background-color: #d6d9d0;
     padding: 10px 10px 0 10px;
     top: 25px;
-    left: 3195px;
+    left: 3595px;
     z-index: 9;
     width: 330px;
 }
@@ -576,7 +625,7 @@ div#etudes
     height: 250px;
     width: 250px;
     top: 50px;
-    left: 3605px;
+    left: 4005px;
     z-index: 8;
 }
 
@@ -650,7 +699,7 @@ div#etudes h2
 div#linkedin
 {
     top: 80px;
-    left: 2835px;
+    left: 3235px;
     width: 120px;
     height: 120px;
     z-index: 8;
@@ -662,7 +711,7 @@ div#linkedin
 div#ministere
 {
     top: 150px;
-    left: 3015px;
+    left: 3415px;
     z-index: 9;
     background-color: white;
 }
@@ -680,7 +729,7 @@ div#senlis
     width: 750px;
     height: 300px;
     bottom: 45px;
-    left: 3210px;
+    left: 3610px;
 }
 
 div#senlis div#filtre
@@ -738,7 +787,7 @@ div#retour
     width: 30px;
     height: 280px;
     top: 35px;
-    left: 3910px;
+    left: 4310px;
     display: flex;
     align-items: center;
     cursor: pointer;
