@@ -10,7 +10,7 @@ html, body
 {
 	background-color: white;
     height: 100%;
-    width: 4440px;
+    width: 4810px;
 }
 
 div#wrapper
@@ -161,6 +161,11 @@ div.texte_calque
     align-items: center;
 }
 
+div#alain-photo div.calque
+{
+    background-color: rgba(183, 189, 176, 0.8);
+}
+
 div#christmas div.calque
 {
     background-color: rgba(183, 189, 176, 0.8);
@@ -207,12 +212,63 @@ div.calque h2, div.calque p
     color: white;
 }
 
+/**************************************************************************div alain-photo */
+
+div#alain-photo {
+    top: 95px;
+    left: 290px;
+    width: 370px;
+    height: auto;
+}
+
+#alain-photo img {
+    width: 100%;
+}
+
+/**************************************************************************div alain-photo-mobile */
+
+div#alain-photo-mobile {
+    top: 330px;
+    left: 310px;
+    width: 100px;
+    height: auto;
+}
+
+#alain-photo-mobile img {
+    width: 100%;
+}
+/**************************************************************************div alain-infos */
+
+#alain-infos {
+    bottom: 25px;
+    left: 430px;
+    width: 200px;
+    height: 300px;
+    background-color: #d6d9d0;
+    padding: 10px;
+    color: #f4f4f4;
+}
+
+#alain-infos h3 {
+    margin-bottom: 20px;
+}
+
+#alain-infos p span {
+    font-weight: 600;
+}
+
+#alain-infos img {
+    height: 40%;
+    width: auto;
+    margin-top: 10px;
+}
+
 /**************************************************************************div rubber */
 
 div#rubber
 {
     bottom:0px;
-    left: 340px;
+    left: 710px;
     height: 100%;
     width: 310px;
     background-color: #f4f4f4;
@@ -239,7 +295,7 @@ div#rubber
 div#christmas
 {
     bottom:65px;
-    left: 300px;
+    left: 670px;
     height: 230px;
     width: 420px;
     background-color: rgba(122, 125, 104, 0.9);
@@ -256,7 +312,7 @@ video {
 div#formation2
 {
     bottom:20px;
-    left: 740px;
+    left: 1110px;
     height: 300px;
     width: 300px;
     background-color: rgba(122, 125, 104, 0.9);
@@ -303,7 +359,7 @@ div#formation2 p
 div#icecreams
 {
     top: 55px;
-    left: 655px;
+    left: 1025px;
     height: 290px;
     width: 360px;
 }
@@ -319,7 +375,7 @@ div#opera
 {
     background-color: #b7bdb0;
     top: 90px;
-    left: 1100px;
+    left: 1470px;
     width: 360px;
     height: 400px;
     padding: 10px;
@@ -340,7 +396,7 @@ div.contexte_c2c
 div#c2c
 {
     bottom: 10px;
-    left: 1140px;
+    left: 1510px;
     z-index: 10;
     height: 200px;
     width: 200px;
@@ -369,7 +425,7 @@ div#epitech
     background-color: #f4f4f4;
     padding: 10px 10px 0 10px;
     top: 15px;
-    left: 1505px;
+    left: 1875px;
 }
 
 div#titre_epitech
@@ -398,7 +454,7 @@ div#tronc_commun p, div#specialisation p
 div#carte
 {
     top: 190px;
-    left: 1810px;
+    left: 2180px;
     z-index: 10;
     height: 280px;
     width: 280px;
@@ -425,7 +481,7 @@ div#carte:hover img
 div#applimeteo
 {
     top: 55px;
-    left: 2130px;
+    left: 2500px;
     height: 370px;
 }
 
@@ -439,7 +495,7 @@ div#applimeteo img
 div#tictactoe
 {
     bottom: 40px;
-    left: 1870px;
+    left: 2240px;
     height: 180px;
 }
 
@@ -453,7 +509,7 @@ div#tictactoe img
 div#bourgogne
 {
     bottom: 50px;
-    left: 2360px;
+    left: 2730px;
     height: 250px;
     z-index: 8;
 }
@@ -473,7 +529,7 @@ div#bourgogne img
 div#carthageo
 {
     top: 100px;
-    left: 2440px;
+    left: 2810px;
     width: 300px;
     height: 195px;
 }
@@ -507,7 +563,7 @@ div#carthageo div.calque img
 div#babbel
 {
     bottom: 85px;
-    left: 2605px;
+    left: 2975px;
     height: 80px;
     width: 120px;
     background-color: #f4f4f4;
@@ -533,7 +589,7 @@ div#progression
 div#gitHub
 {
     bottom: 235px;
-    left: 2635px;
+    left: 3005px;
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -559,7 +615,7 @@ div#openclassrooms
     background-color: #b7bdb0;
     padding: 10px 10px 0 10px;
     top: 23px;
-    left: 2815px;
+    left: 3185px;
     width: 325px;
 }
 
@@ -604,7 +660,7 @@ div#direction
     background-color: #f4f4f4;
     padding: 10px 10px 0 10px;
     bottom: 50px;
-    left: 3195px;
+    left: 3565px;
     z-index: 8;
 }
 
@@ -613,7 +669,7 @@ div#enseignement
     background-color: #d6d9d0;
     padding: 10px 10px 0 10px;
     top: 25px;
-    left: 3595px;
+    left: 3965px;
     z-index: 9;
     width: 330px;
 }
@@ -625,7 +681,7 @@ div#etudes
     height: 250px;
     width: 250px;
     top: 50px;
-    left: 4005px;
+    left: 4375px;
     z-index: 8;
 }
 
@@ -699,7 +755,7 @@ div#etudes h2
 div#linkedin
 {
     top: 80px;
-    left: 3235px;
+    left: 3605px;
     width: 120px;
     height: 120px;
     z-index: 8;
@@ -711,7 +767,7 @@ div#linkedin
 div#ministere
 {
     top: 150px;
-    left: 3415px;
+    left: 3785px;
     z-index: 9;
     background-color: white;
 }
@@ -729,7 +785,7 @@ div#senlis
     width: 750px;
     height: 300px;
     bottom: 45px;
-    left: 3610px;
+    left: 3980px;
 }
 
 div#senlis div#filtre
@@ -787,7 +843,7 @@ div#retour
     width: 30px;
     height: 280px;
     top: 35px;
-    left: 4310px;
+    left: 4680px;
     display: flex;
     align-items: center;
     cursor: pointer;
