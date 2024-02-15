@@ -10,7 +10,7 @@ html, body
 {
 	background-color: white;
     height: 100%;
-    width: 4810px;
+    width: 5110px;
 }
 
 div#wrapper
@@ -211,12 +211,63 @@ div.calque h2, div.calque p
 {
     color: white;
 }
+/**************************************************************************div condorcet */
+
+div#condorcet {
+    top: 80px;
+    left: 300px;
+    width: 230px;
+    height: 330px;
+    background-color: rgba(122, 125, 104, 0.9);
+    padding: 5px;
+}
+
+div#condorcet h2, div#condorcet h3
+{
+    color: #f4f4f4;
+    margin-bottom: 15px;
+}
+
+div#condorcet p
+{
+    text-align: left;
+    padding-left: 10px;
+}
+
+div#condorcet p, div#condorcet ul li
+{
+   color: #b7bdb0;
+}
+
+/**************************************************************************div condorcet-map */
+
+div#condorcet-map {
+    top: 400px;
+    left: 320px;
+    width: 250px;
+    height: 250px;
+}
+
+#condorcet-map img {
+    position: absolute;
+    top: 75px;
+    left: 27px;
+    opacity: 0;
+    width: 80%;
+    transition: opacity 0.5s linear;
+}
+
+div#condorcet-map:hover img
+{
+    opacity: 1;
+    z-index: 9;
+}
 
 /**************************************************************************div alain-photo */
 
 div#alain-photo {
     top: 95px;
-    left: 290px;
+    left: 590px;
     width: 370px;
     height: auto;
 }
@@ -229,7 +280,7 @@ div#alain-photo {
 
 div#alain-photo-mobile {
     top: 330px;
-    left: 310px;
+    left: 610px;
     width: 100px;
     height: auto;
 }
@@ -241,7 +292,7 @@ div#alain-photo-mobile {
 
 #alain-infos {
     bottom: 25px;
-    left: 430px;
+    left: 730px;
     width: 200px;
     height: 300px;
     background-color: #d6d9d0;
@@ -268,7 +319,7 @@ div#alain-photo-mobile {
 div#rubber
 {
     bottom:0px;
-    left: 710px;
+    left: 1010px;
     height: 100%;
     width: 310px;
     background-color: #f4f4f4;
@@ -295,7 +346,7 @@ div#rubber
 div#christmas
 {
     bottom:65px;
-    left: 670px;
+    left: 970px;
     height: 230px;
     width: 420px;
     background-color: rgba(122, 125, 104, 0.9);
@@ -312,7 +363,7 @@ video {
 div#formation2
 {
     bottom:20px;
-    left: 1110px;
+    left: 1410px;
     height: 300px;
     width: 300px;
     background-color: rgba(122, 125, 104, 0.9);
@@ -359,7 +410,7 @@ div#formation2 p
 div#icecreams
 {
     top: 55px;
-    left: 1025px;
+    left: 1325px;
     height: 290px;
     width: 360px;
 }
@@ -375,7 +426,7 @@ div#opera
 {
     background-color: #b7bdb0;
     top: 90px;
-    left: 1470px;
+    left: 1770px;
     width: 360px;
     height: 400px;
     padding: 10px;
@@ -396,7 +447,7 @@ div.contexte_c2c
 div#c2c
 {
     bottom: 10px;
-    left: 1510px;
+    left: 1810px;
     z-index: 10;
     height: 200px;
     width: 200px;
@@ -425,7 +476,7 @@ div#epitech
     background-color: #f4f4f4;
     padding: 10px 10px 0 10px;
     top: 15px;
-    left: 1875px;
+    left: 2175px;
 }
 
 div#titre_epitech
@@ -454,7 +505,7 @@ div#tronc_commun p, div#specialisation p
 div#carte
 {
     top: 190px;
-    left: 2180px;
+    left: 2480px;
     z-index: 10;
     height: 280px;
     width: 280px;
@@ -481,7 +532,7 @@ div#carte:hover img
 div#applimeteo
 {
     top: 55px;
-    left: 2500px;
+    left: 2800px;
     height: 370px;
 }
 
@@ -495,7 +546,7 @@ div#applimeteo img
 div#tictactoe
 {
     bottom: 40px;
-    left: 2240px;
+    left: 2540px;
     height: 180px;
 }
 
@@ -509,7 +560,7 @@ div#tictactoe img
 div#bourgogne
 {
     bottom: 50px;
-    left: 2730px;
+    left: 3030px;
     height: 250px;
     z-index: 8;
 }
@@ -529,7 +580,7 @@ div#bourgogne img
 div#carthageo
 {
     top: 100px;
-    left: 2810px;
+    left: 3110px;
     width: 300px;
     height: 195px;
 }
@@ -563,7 +614,7 @@ div#carthageo div.calque img
 div#babbel
 {
     bottom: 85px;
-    left: 2975px;
+    left: 3275px;
     height: 80px;
     width: 120px;
     background-color: #f4f4f4;
@@ -589,7 +640,7 @@ div#progression
 div#gitHub
 {
     bottom: 235px;
-    left: 3005px;
+    left: 3305px;
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -615,7 +666,7 @@ div#openclassrooms
     background-color: #b7bdb0;
     padding: 10px 10px 0 10px;
     top: 23px;
-    left: 3185px;
+    left: 3485px;
     width: 325px;
 }
 
@@ -660,7 +711,7 @@ div#direction
     background-color: #f4f4f4;
     padding: 10px 10px 0 10px;
     bottom: 50px;
-    left: 3565px;
+    left: 3865px;
     z-index: 8;
 }
 
@@ -669,7 +720,7 @@ div#enseignement
     background-color: #d6d9d0;
     padding: 10px 10px 0 10px;
     top: 25px;
-    left: 3965px;
+    left: 4265px;
     z-index: 9;
     width: 330px;
 }
@@ -681,7 +732,7 @@ div#etudes
     height: 250px;
     width: 250px;
     top: 50px;
-    left: 4375px;
+    left: 4675px;
     z-index: 8;
 }
 
@@ -755,7 +806,7 @@ div#etudes h2
 div#linkedin
 {
     top: 80px;
-    left: 3605px;
+    left: 3905px;
     width: 120px;
     height: 120px;
     z-index: 8;
@@ -767,7 +818,7 @@ div#linkedin
 div#ministere
 {
     top: 150px;
-    left: 3785px;
+    left: 4085px;
     z-index: 9;
     background-color: white;
 }
@@ -785,7 +836,7 @@ div#senlis
     width: 750px;
     height: 300px;
     bottom: 45px;
-    left: 3980px;
+    left: 4280px;
 }
 
 div#senlis div#filtre
@@ -843,7 +894,7 @@ div#retour
     width: 30px;
     height: 280px;
     top: 35px;
-    left: 4680px;
+    left: 4980px;
     display: flex;
     align-items: center;
     cursor: pointer;

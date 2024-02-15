@@ -122,6 +122,52 @@ var carte3 = new ol.Map({
     })
 });
 
+const mapbox4 = new ol.layer.Tile({
+    source: new ol.source.XYZ({
+        tileSize: [256, 256],
+        url: 'https://api.mapbox.com/styles/v1/adrienvh/cl7923v83000m14mrmri65tyj/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYWRyaWVudmgiLCJhIjoiU2lDV0N5cyJ9.2pFJAwvwZ9eBKKPiOrNWEw'
+    })
+})
+
+const condorcetSource = new ol.source.Vector({ projection: 'EPSG:3857' })
+const feature3 = new ol.Feature({})
+feature3.setGeometry(new ol.geom.Point(ol.proj.fromLonLat([2.36701, 48.90959])))
+condorcetSource.addFeature(feature3)
+const condorcet = new ol.layer.Vector({
+    source: condorcetSource,
+    style: new ol.style.Style({
+        image: new ol.style.Circle({
+            stroke: new ol.style.Stroke({color: 'white', width: 2}),
+            fill: new ol.style.Fill({color: '#7a7d68'}),
+            radius: 8
+        })
+    })
+})
+
+var carte4 = new ol.Map({
+    interactions: ol.interaction.defaults({
+        doubleClickZoom: false,
+        dragAndDrop: false,
+        dragPan: false,
+        keyboardPan: false,
+        keyboardZoom: false,
+        mouseWheelZoom: false,
+        pointer: false,
+        select: false,
+    }),
+    controls: ol.control.defaults({
+        attribution: false,
+        zoom: false,
+        rotate: false
+    }),
+    target: 'condorcet-map',
+    layers: [mapbox4, condorcet],
+    view: new ol.View({
+      center: ol.proj.fromLonLat([2.35364, 48.89321]),
+      zoom: 12
+    })
+});
+
 document.getElementById("retour").addEventListener("click", function() {window.scrollTo(0, 0);});
 
 document.getElementById("christmas").addEventListener("mouseover", function() {
